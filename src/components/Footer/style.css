@@ -15,16 +15,17 @@
   justify-content: space-between;
 }
 
+.footer_container:first-child {
+  width: 70%;
+  height: 40px;
+}
+
 .footer_text {
   color: wheat;
   cursor: pointer;
   padding: 10px;
 }
 
-.footer_container:first-child {
-  width: 50%;
-  height: 40px;
-}
 
 .social {
   width: 40px;
