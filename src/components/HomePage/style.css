@@ -90,7 +90,8 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 50px 100px;
+  width: 80%;
+  margin: 0 auto 100px;
 
 }
 
