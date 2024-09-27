@@ -1,0 +1,138 @@
+li {
+  width: 100%;
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.base {
+  background-color: rgba(0, 0, 0, 0.877);
+  display: flex;
+  flex-direction: column;
+}
+
+.preview_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 100px 0;
+}
+
+.preview {
+  width: 80vw;
+  margin: 50px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.preview:hover {
+  transform: scale(1.03);
+}
+
+.text_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.text {
+  background: linear-gradient(45deg, #e000bb, #fffb00, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 70%;
+  text-transform: uppercase;
+  margin: 0 0 50px;
+  text-align: center;
+}
+
+.games_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.slots {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 50px;
+}
+
+
+.game {
+  width: 30vw;
+  transition: 500ms;
+  position: relative;
+}
+
+.game:hover {
+  scale: 1.1;
+  transform: translateY(-30px);
+  box-shadow: -3px 35px 33px -46px rgba(255, 183, 28, 0.75);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.about_container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
+  width: 100%;
+  max-width: 1200px;
+  gap: 40px;
+}
+
+.text_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text_container:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.new {
+  background: linear-gradient(45deg, #f0ed59, #85f18a, #65c2ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+}
+
+.new:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .slots {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .game {
+    width: 60vw;
+  }
+}
