@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Lucky Empire App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Description:** This project is a web application that offers free online games. It features a user-friendly interface and allows users to enjoy a variety of games without restrictions.
 
-## Available Scripts
+## Demo
 
-In the project directory, you can run:
+You can view the live demo [here](https://v-shut.github.io/lucky_empire/).
 
-### `npm start`
+## Technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React** — A JavaScript library for building user interfaces.
+- **React Router** — For navigation between pages.
+- **CSS** — For styling components.
+- **gh-pages** — For deploying the project on GitHub Pages.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Description of Key Folders and Files
 
-### `npm test`
+- **public/**: Contains static files that are served directly.
+  - `index.html`: The main HTML file for the application.
+  - Other image files used in the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **src/**: Contains the source code of the application.
+  - **components/**: Contains reusable components that are used throughout the application.
+    - Each component has its own folder containing the implementation file (`.js`) and styles (`.css`).
+  - `App.js`: The main application component that sets up routing and includes other components.
+  - `index.js`: The entry point of the application, which renders the `App` component.
+  - `index.css`: Global styles for the application.
 
-### `npm run build`
+- **package.json**: Contains project metadata, scripts, and dependencies.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/your-username/weather-forecast-app.git
+   ```
 
-### `npm run eject`
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Start the development server:
+    ```bash
+    npm start
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Build for production:
+    ```bash
+    npm run build
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Deploy
 
-## Learn More
+To deploy the application on GitHub Pages:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Add the following in your `package.json` under `scripts`:
+    ```json
+    "deploy": "gh-pages -d dist"
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Run the following commands:
+    ```bash
+    npm run build
+    npm run deploy
+    ```
 
-### Code Splitting
+Ensure that the repository has GitHub Pages enabled and is set to serve from the `gh-pages` branch.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
+Feel free to open a pull request for any improvements or bug fixes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
